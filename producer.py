@@ -2,7 +2,6 @@ import time
 import random
 from kafka import KafkaProducer
 
-
 bootstrap_server=["localhost:9092"]
 
 topic="naturalnumber"
