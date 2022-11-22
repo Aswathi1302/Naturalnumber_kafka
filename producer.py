@@ -13,8 +13,8 @@ producer = KafkaProducer()
 
 
 def senddata():
-    data = random.randint(0,1000)
-    message = producer.send(topic,bytes(str(data),"utf-8"))
+    randomnmbr = random.randint(0,1000)
+    message = producer.send(topic,bytes(str(randomnmbr),"utf-8"))
     metadata =message.get()
     print(metadata.topic)
     print(metadata.partition)
